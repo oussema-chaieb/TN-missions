@@ -85,24 +85,26 @@ Config.Ped = {
         },
     },
     VehicleSpawn = {
-        vector3(-1327.479736328, -86.045326232910, 49.31),
-        vector3(-2075.888183593, -233.73908996580, 21.10),
-        vector3(-972.1781616210, -1530.9045410150, 4.890),
-        vector3(798.18426513672, -1799.8173828125, 29.33),
-        vector3(1247.0718994141, -344.65634155273, 69.08)
+        [1] = {
+            vector3(2589.14, -377.86, 92.2),
+            vector3(2593.2, -460.19, 85.21),
+            vector3(2610.75, -544.01, 71.03)
+        },
+        [2] = {
+            vector3(3388.39, 3728.72, 32.11),
+            vector3(3399.69, 3741.17, 30.56),
+            vector3(3410.59, 3752.95, 30.03)
+        },
+        [3] = {
+            vector3(-2398.02, 3584.86, 16.42),
+            vector3(-2395.58, 3565.12, 17.38),
+            vector3(-2392.95, 3543.24, 18.41)
+        },
     },
     Rewards = {
         [1] =  {
             {
-                item = "drill",
-                amount = 2
-            },
-            {
-                item = "lockpick",
-                amount = 5
-            },
-            {
-                item = "phone",
+                item = "weed_brick",
                 amount = 3
             },
         },
@@ -136,5 +138,18 @@ Config.Ped = {
     }
 }
 
-Config.DriverWeap = `WEAPON_MICROSMG` -- Weapon for truck driver to spawn with
-Config.NavWeap = `WEAPON_MICROSMG` -- Weapon for navigator to spawn with
+Config.DriverWeap = `WEAPON_PISTOL50` -- Weapon for truck driver to spawn with
+Config.NavWeap = `WEAPON_HEAVYPISTOL` -- Weapon for navigator to spawn with
+
+Config.CarItems = {
+    [1] = {
+        name = "vpn",
+        amount = 1,
+        info = {},
+        type = "item",
+        slot = 1,
+    }
+}
+
+Config.Time = 900
+Config.ShowBlips = false

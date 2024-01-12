@@ -17,6 +17,13 @@ server_scripts {
     'server/main.lua'
 }
 
-ui_page 'html/index.html'
+ui_page 'ui/index.html'
+
+files {
+    'ui/js/*.js',
+    'ui/*.html',
+    'ui/css/*.css',
+    'ui/img/*.png'
+}
 
 lua54 'yes'
